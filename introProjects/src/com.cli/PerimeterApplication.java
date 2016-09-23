@@ -10,9 +10,9 @@ public class PerimeterApplication {
 
         while (inputYes.equalsIgnoreCase("y") || inputYes.equalsIgnoreCase("yes")) {
             System.out.println("Enter length in feet:");
-            double length = 0;
+            double length = sc.nextDouble();
             System.out.println("Enter the width in feet:");
-            double width = 0;
+            double width = sc.nextDouble();
 
             double area = width * length;
             double perimeter = (2 * width) + (2 * length);
