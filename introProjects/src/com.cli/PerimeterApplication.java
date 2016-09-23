@@ -4,15 +4,17 @@ package com.cli; /**
 import java.util.Scanner;
 public class PerimeterApplication {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to the Room Detail Generator!");
         String inputYes = "y";
+        Scanner sc = new Scanner(System.in);
 
         while (inputYes.equalsIgnoreCase("y") || inputYes.equalsIgnoreCase("yes")) {
+            double length;
+            double width;
             System.out.println("Enter length in feet:");
-            double length = sc.nextDouble();
+            length = sc.nextDouble();
             System.out.println("Enter the width in feet:");
-            double width = sc.nextDouble();
+            width = sc.nextDouble();
 
             double area = width * length;
             double perimeter = (2 * width) + (2 * length);
